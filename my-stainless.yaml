@@ -1,0 +1,55 @@
+# yaml-language-server: $schema=https://app.stainlessapi.com/config.schema.json
+
+organization:
+  name: PetStore
+  docs: https://docs.PetStore.com
+  contact: dev-feedback@PetStore.com
+  github_org: PetStore
+resources:
+  pets:
+    methods:
+      list: get /pets
+      create: post /pets
+      retrieve: get /pets/{petId}
+    models:
+      pets: Pets
+      pet: Pet
+package:
+  node:
+    name: PetStore
+    repo: PetStore-node
+  python:
+    name: PetStore
+    repo: PetStore-python
+  java:
+    name: PetStore
+    repo: PetStore-java
+    reverse_domain: com.petstore
+  kotlin:
+    name: PetStore
+    repo: PetStore-kotlin
+  go:
+    name: PetStore
+    repo: PetStore-go
+settings:
+  license: Apache-2.0
+client_settings: {}
+environments:
+  production: http://petstore.swagger.io/v1
+query_settings:
+  nested_format: brackets
+  array_format: comma
+readme:
+  example_requests:
+    default:
+      type: request
+      endpoint: post /pets
+      params: &ref_0 {}
+    headline:
+      type: request
+      endpoint: post /pets
+      params: *ref_0
+    pagination:
+      type: request
+      endpoint: get /pets
+      params: {}
