@@ -15,7 +15,7 @@
     "paths": {
       "/pets": {
         "get": {
-          "summary": "List all pets and cats and dogs",
+          "summary": "List all pets and cats and dogs and turtles",
           "operationId": "listPets",
           "tags": [
             "pets"
