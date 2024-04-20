@@ -9,9 +9,9 @@
     "esModuleInterop": true,
     "baseUrl": "./",
     "paths": {
-      "@stainless-temp/milosthirdproject/_shims/auto/*": ["src/_shims/auto/*-node"],
-      "@stainless-temp/milosthirdproject/*": ["src/*"],
-      "@stainless-temp/milosthirdproject": ["src/index.ts"],
+      "milosthirdproject/_shims/auto/*": ["src/_shims/auto/*-node"],
+      "milosthirdproject/*": ["src/*"],
+      "milosthirdproject": ["src/index.ts"],
     },
     "noEmit": true,
 

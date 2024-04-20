@@ -1,8 +1,8 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import Milosthirdproject from '@stainless-temp/milosthirdproject';
-import { APIUserAbortError } from '@stainless-temp/milosthirdproject';
-import { Headers } from '@stainless-temp/milosthirdproject/core';
+import Milosthirdproject from 'milosthirdproject';
+import { APIUserAbortError } from 'milosthirdproject';
+import { Headers } from 'milosthirdproject/core';
 import defaultFetch, { Response, type RequestInit, type RequestInfo } from 'node-fetch';
 
 describe('instantiate client', () => {

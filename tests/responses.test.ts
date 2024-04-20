@@ -1,5 +1,5 @@
-import { createResponseHeaders } from '@stainless-temp/milosthirdproject/core';
-import { Headers } from '@stainless-temp/milosthirdproject/_shims/index';
+import { createResponseHeaders } from 'milosthirdproject/core';
+import { Headers } from 'milosthirdproject/_shims/index';
 
 describe('response parsing', () => {
   // TODO: test unicode characters

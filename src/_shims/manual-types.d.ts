@@ -4,8 +4,8 @@
 /**
  * Types will get added to this namespace when you import one of the following:
  *
- *   import '@stainless-temp/milosthirdproject/shims/node'
- *   import '@stainless-temp/milosthirdproject/shims/web'
+ *   import 'milosthirdproject/shims/node'
+ *   import 'milosthirdproject/shims/web'
  *
  * Importing more than one will cause type and runtime errors.
  */

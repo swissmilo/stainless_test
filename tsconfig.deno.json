@@ -6,9 +6,9 @@
     "rootDir": "./deno",
     "lib": ["es2020", "DOM"],
     "paths": {
-      "@stainless-temp/milosthirdproject/_shims/auto/*": ["deno/_shims/auto/*-deno"],
-      "@stainless-temp/milosthirdproject/*": ["deno/*"],
-      "@stainless-temp/milosthirdproject": ["deno/index.ts"],
+      "milosthirdproject/_shims/auto/*": ["deno/_shims/auto/*-deno"],
+      "milosthirdproject/*": ["deno/*"],
+      "milosthirdproject": ["deno/index.ts"],
     },
     "noEmit": true,
     "declaration": true,
