@@ -1,6 +1,6 @@
-import { multipartFormRequestOptions, createForm } from '@stainless-temp/milosthirdproject/core';
-import { Blob } from '@stainless-temp/milosthirdproject/_shims/index';
-import { toFile } from '@stainless-temp/milosthirdproject';
+import { multipartFormRequestOptions, createForm } from 'milosthirdproject/core';
+import { Blob } from 'milosthirdproject/_shims/index';
+import { toFile } from 'milosthirdproject';
 
 describe('form data validation', () => {
   test('valid values do not error', async () => {

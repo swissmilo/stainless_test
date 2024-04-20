@@ -4,7 +4,7 @@ import * as Core from './core';
 import * as Errors from './error';
 import { type Agent } from './_shims/index';
 import * as Uploads from './uploads';
-import * as API from '@stainless-temp/milosthirdproject/resources/index';
+import * as API from 'milosthirdproject/resources/index';
 
 export interface ClientOptions {
   /**

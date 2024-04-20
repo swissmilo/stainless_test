@@ -1,4 +1,4 @@
-import { APIClient } from '@stainless-temp/milosthirdproject/core';
+import { APIClient } from 'milosthirdproject/core';
 
 const { stringifyQuery } = APIClient.prototype as any;
 

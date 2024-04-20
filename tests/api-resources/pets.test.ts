@@ -1,6 +1,6 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import Milosthirdproject from '@stainless-temp/milosthirdproject';
+import Milosthirdproject from 'milosthirdproject';
 import { Response } from 'node-fetch';
 
 const milosthirdproject = new Milosthirdproject({

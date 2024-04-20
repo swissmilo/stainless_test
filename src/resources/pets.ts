@@ -1,9 +1,9 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import * as Core from '@stainless-temp/milosthirdproject/core';
-import { APIResource } from '@stainless-temp/milosthirdproject/resource';
-import { isRequestOptions } from '@stainless-temp/milosthirdproject/core';
-import * as PetsAPI from '@stainless-temp/milosthirdproject/resources/pets';
+import * as Core from 'milosthirdproject/core';
+import { APIResource } from 'milosthirdproject/resource';
+import { isRequestOptions } from 'milosthirdproject/core';
+import * as PetsAPI from 'milosthirdproject/resources/pets';
 
 export class Pets extends APIResource {
   /**
