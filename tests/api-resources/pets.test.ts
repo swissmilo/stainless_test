@@ -44,8 +44,8 @@ describe('resource pets', () => {
     ).rejects.toThrow(Milosthirdproject.NotFoundError);
   });
 
-  test('list4', async () => {
-    const responsePromise = milosthirdproject.pets.list4();
+  test('list5', async () => {
+    const responsePromise = milosthirdproject.pets.list5();
     const rawResponse = await responsePromise.asResponse();
     expect(rawResponse).toBeInstanceOf(Response);
     const response = await responsePromise;
@@ -55,17 +55,17 @@ describe('resource pets', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  test('list4: request options instead of params are passed correctly', async () => {
+  test('list5: request options instead of params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
-    await expect(milosthirdproject.pets.list4({ path: '/_stainless_unknown_path' })).rejects.toThrow(
+    await expect(milosthirdproject.pets.list5({ path: '/_stainless_unknown_path' })).rejects.toThrow(
       Milosthirdproject.NotFoundError,
     );
   });
 
-  test('list4: request options and params are passed correctly', async () => {
+  test('list5: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
-      milosthirdproject.pets.list4({ limit: 0 }, { path: '/_stainless_unknown_path' }),
+      milosthirdproject.pets.list5({ limit: 0 }, { path: '/_stainless_unknown_path' }),
     ).rejects.toThrow(Milosthirdproject.NotFoundError);
   });
 });
