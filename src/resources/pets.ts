@@ -1,9 +1,9 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import * as Core from 'milosthirdproject/core';
-import { APIResource } from 'milosthirdproject/resource';
-import { isRequestOptions } from 'milosthirdproject/core';
-import * as PetsAPI from 'milosthirdproject/resources/pets';
+import * as Core from '../core';
+import { APIResource } from '../resource';
+import { isRequestOptions } from '../core';
+import * as PetsAPI from './pets';
 
 export class Pets extends APIResource {
   /**
@@ -23,14 +23,14 @@ export class Pets extends APIResource {
   /**
    * List all pets
    */
-  list(query?: PetListParams, options?: Core.RequestOptions): Core.APIPromise<Pets>;
-  list(options?: Core.RequestOptions): Core.APIPromise<Pets>;
-  list(
-    query: PetListParams | Core.RequestOptions = {},
+  list2(query?: PetList2Params, options?: Core.RequestOptions): Core.APIPromise<Pets>;
+  list2(options?: Core.RequestOptions): Core.APIPromise<Pets>;
+  list2(
+    query: PetList2Params | Core.RequestOptions = {},
     options?: Core.RequestOptions,
   ): Core.APIPromise<Pets> {
     if (isRequestOptions(query)) {
-      return this.list({}, query);
+      return this.list2({}, query);
     }
     return this._client.get('/pets', { query, ...options });
   }
@@ -46,7 +46,7 @@ export interface Pet {
 
 export type Pets = Array<Pet>;
 
-export interface PetListParams {
+export interface PetList2Params {
   /**
    * How many items to return at one time (max 100)
    */
@@ -56,5 +56,5 @@ export interface PetListParams {
 export namespace Pets {
   export import Pet = PetsAPI.Pet;
   export import Pets = PetsAPI.Pets;
-  export import PetListParams = PetsAPI.PetListParams;
+  export import PetList2Params = PetsAPI.PetList2Params;
 }

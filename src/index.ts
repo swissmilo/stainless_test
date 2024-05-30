@@ -4,7 +4,7 @@ import * as Core from './core';
 import * as Errors from './error';
 import { type Agent } from './_shims/index';
 import * as Uploads from './uploads';
-import * as API from 'milosthirdproject/resources/index';
+import * as API from './resources/index';
 
 export interface ClientOptions {
   /**
@@ -152,7 +152,7 @@ export namespace Milosthirdproject {
 
   export import Pets = API.Pets;
   export import Pet = API.Pet;
-  export import PetListParams = API.PetListParams;
+  export import PetList2Params = API.PetList2Params;
 }
 
 export default Milosthirdproject;
