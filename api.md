@@ -9,4 +9,4 @@ Methods:
 
 - <code title="post /pets">client.pets.<a href="./src/resources/pets.ts">create</a>() -> void</code>
 - <code title="get /pets/{petId}">client.pets.<a href="./src/resources/pets.ts">retrieve</a>(petId) -> Pet</code>
-- <code title="get /pets">client.pets.<a href="./src/resources/pets.ts">list3</a>({ ...params }) -> Pets</code>
+- <code title="get /pets">client.pets.<a href="./src/resources/pets.ts">list4</a>({ ...params }) -> Pets</code>
