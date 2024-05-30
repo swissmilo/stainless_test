@@ -152,7 +152,7 @@ export namespace Milosthirdproject {
 
   export import Pets = API.Pets;
   export import Pet = API.Pet;
-  export import PetList2Params = API.PetList2Params;
+  export import PetList3Params = API.PetList3Params;
 }
 
 export default Milosthirdproject;
